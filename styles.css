@@ -1,1 +1,130 @@
-hello
+body{
+background-color: #F5EDE1;
+}
+
+p{
+font-family: Work Sans, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14pt;
+line-height: 24pt;
+color: #08241C;
+margin-bottom: -20px;
+}
+
+a:link{
+  color: #0C1E2D;
+  text-decoration: none;
+}
+a:hover{
+  color: #D5512F;
+  text-decoration: underline;
+}
+
+
+
+h1{
+  font-family: p22-mackinac-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36pt;
+    line-height: 46pt;
+    color: #08241C;
+    margin-left:-3px;
+    margin-bottom:-10px;
+}
+
+h2{
+  font-family: Work Sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12pt;
+  line-height: 28pt;
+  letter-spacing: 2.5px;
+  color: #08241C;
+  margin-bottom: -42px;
+}
+
+h3{
+  font-family: p22-mackinac-pro, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18pt;
+  line-height: 28pt;
+  color: #08241C;
+  margin-top: 36px;
+  margin-bottom: -12px;
+}
+
+h4{
+font-family: Work Sans, sans-serif;
+font-style: normal;
+font-size: 18pt;
+font-weight: 400;
+line-height: 24pt;
+color: #08241C;
+margin-top:10px;
+}
+
+img{
+width: 30vw;
+padding-bottom:10vh;
+}
+
+.pbs-countdown{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  padding: 10vh 0vh 2vh 0vh;
+}
+
+.pbs-countdown-number{
+  font-family: Work Sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 64px;
+  color: #08241C;
+}
+
+.pbs-countdown-label{
+  font-family: Work Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 12pt;
+  line-height: 28pt;
+  letter-spacing: 2.5px;
+  color: #08241C;
+}
+
+section{
+  padding-bottom:15vh;
+}
+
+.hero{
+text-align: center;
+margin:5vw 10vw 10vw 10vw;
+}
+
+.intro{
+  margin:5vw 20vw 10vw 20vw;
+}
+
+.leftbox{
+  display: grid;
+  grid-template-columns: auto auto;
+width: 80vw;
+margin-top:5vw;
+margin-left:5vw;
+margin-bottom:5vw;
+grid-column-gap:5vw;
+}
+
+.accent{
+border-left: 3px solid #E6D3B4;
+border-spacing: 2px;
+padding-left:1vw;
+margin-left:2vw;
+}
