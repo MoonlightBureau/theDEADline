@@ -128,3 +128,20 @@ border-spacing: 2px;
 padding-left:1vw;
 margin-left:2vw;
 }
+
+.cta{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top:3vw;
+}
+
+.ctaitem{
+    text-align: left;
+    background-color: white;
+    text-align: left;
+    margin-right: 2vw;
+}
+
+.ctaitem:hover{
+  background-color: black;
+}
