@@ -43,6 +43,16 @@ h1{
     margin-bottom:-10px;
 }
 
+h1-special{
+  font-family: p22-mackinac-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36pt;
+    line-height: 46pt;
+    color: white;
+    transition: color 0.7s;
+}
+
 h2{
   font-family: Work Sans, sans-serif;
   font-weight: 900;
@@ -168,7 +178,7 @@ margin-left:2vw;
     background-position: center;
     padding: 1vw 1vw 1vw 1vw;
     width: 30vw;
-    transition: background-color 1s;
+    transition: background-color 0.7s;
 }
 
 .ctaitem:hover{
@@ -178,9 +188,10 @@ margin-left:2vw;
 .finalcta{
   margin: 5vw 20vw 5vw 20vw;
   text-align: center;
-  background-color: red;
-  transition: background-color 1s;
+  background-color: #A53529;
+  transition: background-color 0.7s;
+  padding:2vw;
 }
 .finalcta:hover{
-  background-color: white;
+  background-color: #EDC9B7;
 }
