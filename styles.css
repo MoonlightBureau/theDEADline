@@ -1,5 +1,11 @@
+
+
 body{
 background-color: #F5EDE1;
+}
+
+html{
+  height: 100%;
 }
 
 p{
@@ -12,16 +18,19 @@ color: #08241C;
 margin-bottom: -20px;
 }
 
-a:link{
-  color: #0C1E2D;
+a{
+  font-family: Work Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14pt;
+  line-height: 24pt;
+  color: #08241C;
   text-decoration: none;
 }
+
 a:hover{
   color: #D5512F;
-  text-decoration: underline;
 }
-
-
 
 h1{
   font-family: p22-mackinac-pro, serif;
@@ -122,6 +131,16 @@ margin-bottom:5vw;
 grid-column-gap:5vw;
 }
 
+.rightbox{
+  display: grid;
+  grid-template-columns: auto auto;
+width: 80vw;
+margin-top:5vw;
+margin-left:13vw;
+margin-bottom:5vw;
+grid-column-gap:5vw;
+}
+
 .accent{
 border-left: 3px solid #E6D3B4;
 border-spacing: 2px;
@@ -129,19 +148,39 @@ padding-left:1vw;
 margin-left:2vw;
 }
 
+.close{
+  position: center;
+}
+
+.closeparagraph{
+  margin: 5vw 20vw 5vw 20vw;
+  text-align: center;
+}
+
 .cta{
   display: grid;
   grid-template-columns: auto auto auto;
-  padding-top:3vw;
 }
 
 .ctaitem{
     text-align: left;
     background-color: white;
-    text-align: left;
-    margin-right: 2vw;
+    background-position: center;
+    padding: 1vw 1vw 1vw 1vw;
+    width: 30vw;
+    transition: background-color 1s;
 }
 
 .ctaitem:hover{
-  background-color: black;
+  background-color: #EDC9B7;
+}
+
+.finalcta{
+  margin: 5vw 20vw 5vw 20vw;
+  text-align: center;
+  background-color: red;
+  transition: background-color 1s;
+}
+.finalcta:hover{
+  background-color: white;
 }
