@@ -1,0 +1,115 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,900" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/fip5tjv.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>The tester</title>
+</head>
+
+<style>
+  #header {
+    background-color: #F5EDE1;
+    color: black;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+  }
+
+  .pbs-countdown{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    padding: 10vh 0vh 2vh 0vh;
+  }
+
+  .pbs-countdown-number{
+    font-family: Work Sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100px;
+    line-height: 64px;
+    color: #08241C;
+  }
+
+  #pbs-countdown-number{
+    font-family: Work Sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100px;
+    line-height: 64px;
+    color: #08241C;
+    transition: 0.5s;
+  }
+
+  .pbs-countdown-label{
+    font-family: Work Sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 12pt;
+    line-height: 28pt;
+    letter-spacing: 2.5px;
+    color: #08241C;
+  }
+
+  section{
+    padding-bottom:15vh;
+  }
+
+  .hero{
+  text-align: center;
+  margin:5vw 10vw 10vw 10vw;
+  }
+
+</style>
+
+<body>
+  <div class="hero" id="thehero">
+    <h2>the deadline</h2><br>
+      <div class="countdown">
+          <div class="pbs-countdown" data-countdown-date="2039-01-25 00:00:00">
+                <div class="pbs-countdown-years">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Years</span>
+                </div>
+                <div class="pbs-countdown-days">
+                  <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Days</span>
+                </div>
+                <div class="pbs-countdown-hours">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Hours</span>
+                </div>
+                <div class="pbs-countdown-minutes">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Minutes</span>
+                </div>
+                <div class="pbs-countdown-seconds">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Seconds</span>
+                </div>
+          </div>
+      </div>
+  </div>
+
+  <div>
+    <p>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br></p>
+  </div>
+  <script src="./assets/js/app.js"></script>
+<script>
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("pbs-countdown-number").style.fontSize = "30px";
+  } else {
+    document.getElementById("pbs-countdown-number").style.fontSize = "100px";
+  }
+}
+</script>
+</body>

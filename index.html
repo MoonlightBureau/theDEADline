@@ -2,11 +2,43 @@
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,900" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/fip5tjv.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>The Deadline</title>
 </head>
 
 <body>
+<div id="header">
+<div class="hero" id="thehero">
+  <h2>the deadline</h2><br>
+    <div class="countdown">
+        <div class="pbs-countdown" data-countdown-date="2039-01-25 00:00:00">
+              <div class="pbs-countdown-years">
+                <span id="pbs-countdown-number-a" class="pbs-countdown-number"></span> <br>
+                <span class="pbs-countdown-label">Years</span>
+              </div>
+              <div class="pbs-countdown-days">
+                <span id="pbs-countdown-number-b" class="pbs-countdown-number"></span> <br>
+                <span class="pbs-countdown-label">Days</span>
+              </div>
+              <div class="pbs-countdown-hours">
+                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
+                <span class="pbs-countdown-label">Hours</span>
+              </div>
+              <div class="pbs-countdown-minutes">
+                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
+                <span class="pbs-countdown-label">Minutes</span>
+              </div>
+              <div class="pbs-countdown-seconds">
+                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
+                <span class="pbs-countdown-label">Seconds</span>
+              </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
   <div class="hero">
     <h2>the deadline</h2><br>
       <div class="countdown">
@@ -34,6 +66,7 @@
           </div>
       </div>
   </div>
+
 <section class="intro">
   <h4>
 “Of 105,000 species studied, 6% of insects, 8% of plants and 4% of vertebrates are projected to lose over half of their climatically determined geographic range for global warming of 1°C, compared with 18% of insects, 16% of plants and 8% of vertebrates for global warming of 2°C”
@@ -76,7 +109,7 @@
 <section id="loon">
     <div class="rightbox">
       <div class="boxcontent">
-        <img src="assets/loon_1.png" alt="very cute loon">
+        <img src="assets/loon_anim.gif" alt="very cute loon">
       <div class="accent">
           <h3>Resources <p> <a href="https://www.google.com">asoc.org</a> <br> <a href="https://www.google.com">asoc2.org</a> <br> <a href="https://www.google.com">asoc3.org</a></p> </h3>
       </div>
@@ -135,6 +168,13 @@
 <section id="bee">
   <div class="rightbox">
     <div class="boxcontent">
+      <img src="assets/bee_anim.gif" alt="very cute bee">
+      <div class="accent">
+        <h3>Resources <p> <a href="https://www.google.com">asoc.org</a> <br> <a href="https://www.google.com">asoc2.org</a> <br> <a href="https://www.google.com">asoc3.org</a></p> </h3>
+      </div>
+    </div>
+
+    <div class="boxcontent">
     <h2>honey bee</h2>
     <h1>Queen of the food chain</h1>
           <p>Like krill, bees support a wide food system that includes you and me. While bees don’t have many natural predators, the flora they pollinate feed lots of other animals in their ecosystems, including you (unless you’re not one for eating plants)! Bees really get a bad rap. Bees are extremely sensitive to our changing climate and their homes are being destroyed for land development. Their production is not being supported as it needs to be, and the craft of beekeeping is dwindling.</p>
@@ -147,18 +187,11 @@
  <br>Start planting plants that bees like (clover, poppies, marigolds)
 <br>Start buying products that support bee production
 <br>Maybe learn how to beekeep
-
             </p>
           </div>
     </div>
 
-    <div class="boxcontent">
-      <img src="assets/bee_1.png" alt="very cute bee">
-      <div class="accent">
-        <h3>Resources <p> <a href="https://www.google.com">asoc.org</a> <br> <a href="https://www.google.com">asoc2.org</a> <br> <a href="https://www.google.com">asoc3.org</a></p> </h3>
-      </div>
 
-    </div>
     </div>
 
       </section>
@@ -193,4 +226,22 @@
 
 
   <script src="./assets/js/app.js"></script>
+
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("pbs-countdown-number-a").style.fontSize = "30px";
+    } else {
+      document.getElementById("pbs-countdown-number-a").style.fontSize = "100px";
+    }
+  }
+    </script>
+
+
+
+
+
 </body>
