@@ -35,11 +35,33 @@
     color: #08241C;
   }
 
-  #pbs-countdown-number{
+
+  .pbs-countdown-number:hover{
     font-family: Work Sans, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 100px;
+    line-height: 64px;
+    color: white;
+  }
+
+
+
+  .pbs-countdown-number-big{
+    font-family: Work Sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100px;
+    line-height: 64px;
+    color: #08241C;
+    transition: 0.5s;
+  }
+
+  .pbs-countdown-small{
+    font-family: Work Sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
     line-height: 64px;
     color: #08241C;
     transition: 0.5s;
@@ -64,6 +86,13 @@
   text-align: center;
   margin:5vw 10vw 10vw 10vw;
   }
+
+  #myDIV {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
 
 </style>
 
@@ -99,6 +128,13 @@
   <div>
     <p>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br>haha content love it <br></p>
   </div>
+
+
+  <div id="myDIV" onscroll="myFunction()">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+  <br><br>
+  'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+
+
   <script src="./assets/js/app.js"></script>
 <script>
 // When the user scrolls down 50px from the top of the document, resize the header's font size
@@ -106,10 +142,16 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("pbs-countdown-number").style.fontSize = "30px";
+    document.getElementById("thehero").style.backgroundcolor = "black";
   } else {
-    document.getElementById("pbs-countdown-number").style.fontSize = "100px";
+    document.getElementById("thehero").style.backgroundcolor = "white";
   }
 }
 </script>
+
+<script type="text/javascript">
+  
+</script>
+
+
 </body>
