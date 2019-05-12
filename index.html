@@ -8,63 +8,48 @@
 </head>
 
 <body>
-<section id="hero">
-  <h2>the deadline</h2><br>
-    <div class="countdown">
-        <div class="pbs-countdown" data-countdown-date="2039-01-25 00:00:00">
-              <div class="pbs-countdown-years">
-                <span id="pbs-countdown-number-a" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Years</span>
-              </div>
-              <div class="pbs-countdown-days">
-                <span id="pbs-countdown-number-b" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Days</span>
-              </div>
-              <div class="pbs-countdown-hours">
-                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Hours</span>
-              </div>
-              <div class="pbs-countdown-minutes">
-                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Minutes</span>
-              </div>
-              <div class="pbs-countdown-seconds">
-                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Seconds</span>
-              </div>
-        </div>
-</section>
+  <section>
+  <div class="hero">
+      <div class="countdown">
+          <div class="pbs-countdown" data-countdown-date="2039-01-25 00:00:00">
+                <div class="pbs-countdown-years">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Years</span>
+                </div>
+                <div class="pbs-countdown-days">
+                  <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Days</span>
+                </div>
+                <div class="pbs-countdown-hours">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Hours</span>
+                </div>
+                <div class="pbs-countdown-minutes">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Minutes</span>
+                </div>
+                <div class="pbs-countdown-seconds">
+                  <span class="pbs-countdown-number"></span> <br>
+                  <span class="pbs-countdown-label">Seconds</span>
+                </div>
+          </div>
+      </div>
+  </div>
+    </section>
 
-<section id="header">
-  <h2>the deadline</h2><br>
-    <div class="countdown">
-        <div class="pbs-countdown" data-countdown-date="2039-01-25 00:00:00">
-              <div class="pbs-countdown-years">
-                <span id="pbs-countdown-number-a" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Years</span>
-              </div>
-              <div class="pbs-countdown-days">
-                <span id="pbs-countdown-number-b" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Days</span>
-              </div>
-              <div class="pbs-countdown-hours">
-                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Hours</span>
-              </div>
-              <div class="pbs-countdown-minutes">
-                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Minutes</span>
-              </div>
-              <div class="pbs-countdown-seconds">
-                <span id="pbs-countdown-number" class="pbs-countdown-number"></span> <br>
-                <span class="pbs-countdown-label">Seconds</span>
-              </div>
-        </div>
-</section>
+    <div id="deadlinetitle">
+    THE DEAD LINE
+    </div>
+
+
+
+
+
+
 
 
 <section class="intro">
-<p>According to a 2018 report from the Intergovernmental panel on Climate Change, a lot of bad stuff is, and will continue to happen unless we act now. </p><br><br>
+<p><span class="firstcharacter">A</span>ccording to a 2018 report from the Intergovernmental panel on Climate Change, a lot of bad stuff is, and will continue to happen unless we act now. </p><br><br>
   <h4>
 “Of 105,000 species studied, 6% of insects, 8% of plants and 4% of vertebrates are projected to lose over half of their climatically determined geographic range for global warming of 1°C, compared with 18% of insects, 16% of plants and <b>8% of vertebrates</b> for global warming of 2°C”
 <p>Intergovernmental Panel on Climate Change, 2018 Report</p>
@@ -233,7 +218,18 @@
 
 
   <script src="./assets/js/app.js"></script>
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
 
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("deadlinetitle").style.fontSize = "20px";
+    } else {
+      document.getElementById("deadlinetitle").style.fontSize = "150px";
+    }
+  }
+  </script>
 
 
 

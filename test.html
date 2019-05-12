@@ -8,7 +8,8 @@
 
 <style>
   #header {
-    background-color: #F5EDE1;
+    background-color: #f1f1f1;
+    padding: 50px 10px;
     color: black;
     text-align: center;
     font-size: 90px;
@@ -97,6 +98,8 @@
 </style>
 
 <body>
+<div id="header">Header</div>
+
   <div class="hero" id="thehero">
     <h2>the deadline</h2><br>
       <div class="countdown">
@@ -136,22 +139,20 @@
 
 
   <script src="./assets/js/app.js"></script>
-<script>
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("thehero").style.backgroundcolor = "black";
-  } else {
-    document.getElementById("thehero").style.backgroundcolor = "white";
+
+  <script>
+  // When the user scrolls down 50px from the top of the document, resize the header's font size
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").style.fontSize = "30px";
+    } else {
+      document.getElementById("header").style.fontSize = "90px";
+    }
   }
-}
-</script>
-
-<script type="text/javascript">
-  
-</script>
+  </script>
 
 
 </body>
