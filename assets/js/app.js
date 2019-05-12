@@ -98,3 +98,16 @@ window.addEventListener( 'DOMContentLoaded', function() {
 Date.prototype.weekofMonth= function(){
  return Math.floor((this.getDate()-1)/7)+1;
 }
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("nav").classList.add("weScrollin");
+    document.getElementById("nav").classList.remove("weChillin");
+  } else {
+    document.getElementById("nav").classList.add("weChillin");
+    document.getElementById("nav").classList.remove("weScrollin");
+  }
+}
