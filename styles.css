@@ -167,6 +167,12 @@ section{
   padding-left: 3px;
 }
 
+.eyes{
+  width:100%;
+  top:30vh;
+  position: absolute;
+}
+
 .leftbox{
   display: grid;
   grid-template-columns: auto auto;
@@ -223,7 +229,7 @@ margin-left:2vw;
 
 .finalcta{
   margin: 5vw 20vw 5vw 20vw;
-  text-align: center;
+  text-align:center;
   background-color: #A53529;
   transition: background-color 0.7s;
   padding:2vw;
